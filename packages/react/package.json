@@ -1,0 +1,31 @@
+{
+  "name": "@victor-ui/react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@victor-ui/eslint-config": "*",
+    "@victor-ui/tokens": "*",
+    "@victor-ui/ts-config": "*",
+    "tsup": "^6.4.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.1",
+    "@stitches/react": "^1.2.8",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "phosphor-react": "^1.4.1",
+    "react": "^18.2.0"
+  }
+}
